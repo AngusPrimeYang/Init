@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane id="gp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="275.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="test.FXController">
+    <columnConstraints>
+	<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+	<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    </columnConstraints>
+    <rowConstraints>
+	<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+	<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+	<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+	<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+	<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+	<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+	<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+	<Text strokeType="OUTSIDE" strokeWidth="0.0" text="歡迎">
+	    <font>
+		<Font size="20.0" />
+	    </font>
+	</Text>
+	<Label text="帳號：" GridPane.rowIndex="1" />
+	<TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
+	<Label text="密碼：" GridPane.rowIndex="2" />
+	<PasswordField GridPane.columnIndex="1" GridPane.rowIndex="2" />
+	<HBox alignment="BOTTOM_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+	    <children>
+		<Button  mnemonicParsing="false" onAction="#submit" text="登入" />
+	    </children>
+	</HBox>
+	<Text fx:id="actiontarget" id="actiontarget" fill="#ff4529" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+    </children>
+    <padding>
+	<Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+    </padding>
+</GridPane>
